@@ -1,36 +1,26 @@
 {
-  "name": "react",
-  "version": "1.0.0",
-  "description": "React example starter project",
-  "keywords": [
-    "react",
-    "starter"
-  ],
-  "main": "src/index.js",
+  "name": "react-accessibility",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
+    "@types/node": "18.14.5",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "eslint": "8.35.0",
+    "eslint-config-next": "13.2.3",
+    "next": "13.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-scripts": "4.0.0"
+    "typescript": "4.9.5"
   },
   "devDependencies": {
     "@axe-core/react": "^4.6.0",
-    "@babel/runtime": "7.13.8",
-    "eslint": "^7.32.0",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "typescript": "^3.2.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "pretest": "npm run lint",
-    "lint": "eslint src"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "eslint-plugin-jsx-a11y": "^6.7.1"
+  }
 }
