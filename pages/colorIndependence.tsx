@@ -1,8 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function () {
   return (
     <div className="m-2">
+    <Link href="/" className="text-blue-600 underline">
+    Return to best practices
+  </Link>
       <h1 className="text-center text-2xl mt-5 mb-5 bg-black text-white">
         Color Independence
       </h1>
@@ -18,31 +22,31 @@ export default function () {
         There are various best practices:
       </div>
       <ul className="list-decimal list-inside">
-        <li className="font-bold">
+        <li className="font-bold mr-1">
           Check for color independence as you’re designing, and do so by using
           the grayscale test.
         </li>
         <li>
-          <span className="font-bold">For error message styling:</span> Indicate
+          <span className="font-bold mr-1">For error message styling: </span> Indicate
           errors by adding/changing something structural (e.g. add an icon,
           indent/offset the field) as opposed to swapping a current color (e.g.
           gray field border changes to red).
         </li>
         <li>
-          <span className="font-bold">
-            For current menu items (and other “selected” states):
+          <span className="font-bold mr-1">
+            For current menu items (and other “selected” states): 
           </span>
-          Style the currently selected menu item with a color independent
+           Style the currently selected menu item with a color independent
           indicator (not just a color change), or use relative luminance.
         </li>
-        <li className="font-bold">
+        <li className="font-bold mr-1">
           For links that have surrounding text, underline them; for links that
           are standalone, use bold.
         </li>
         <li>
-          <span className="font-bold">
+          <span className="font-bold mr-1">
             For progress trackers / progress indicators (and other similar UI
-            elements):
+            elements): 
           </span>
           Start by designing all three states for the steps in a progress
           tracker (past, current, and future) in one shade to avoid using color
@@ -50,31 +54,31 @@ export default function () {
           styling, and finally add color as the secondary visual cue.
         </li>
         <li>
-          <span className="font-bold">
-            For bar charts (and other similar data visualizations):
+          <span className="font-bold mr-1">
+            For bar charts (and other similar data visualizations): 
           </span>
           Use pattern fills for bar charts and other similar data visualizations
         </li>
         <li>
-          <span className="font-bold">For data visualizations:</span> Use
+          <span className="font-bold mr-1">For data visualizations: </span> Use
           interactivity in data visualizations to allow users to pinpoint
           specific numbers, and to view individual graph elements isolated.
         </li>
         <li>
-          <span className="font-bold">
-            For line graphs (and other similar data visualizations):
+          <span className="font-bold mr-1">
+            For line graphs (and other similar data visualizations): 
           </span>
           Use dashed/dotted line styles, and/or varying line widths, for line
           graphs and other similar data visualizations.
         </li>
         <li>
-          <span className="font-bold">For data visualizations:</span> Use other
+          <span className="font-bold mr-1">For data visualizations: </span> Use other
           non-color indicators, like shapes, labels, or icons, to make data
           visualizations color independent (when pattern fills or line styles
           are not feasible).
         </li>
         <li>
-          <span className="font-bold">For any colored UI elements:</span>
+          <span className="font-bold mr-1">For any colored UI elements: </span>
           Combine multiple color independence tactics for a more failproof
           design that’s more usable for all.
         </li>

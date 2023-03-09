@@ -17,7 +17,7 @@ export default function Home() {
         <div>
           <span>1. </span>
           <Link href="/colorContrast" className="text-blue-600 underline">
-            Home
+            Color Contrast
           </Link>
         </div>
         <div>
