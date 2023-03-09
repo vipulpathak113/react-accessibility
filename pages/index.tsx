@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
+import type { ReactElement } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,17 @@ export default function Home() {
             Color Independence
           </Link>
         </div>
+        <div>
+          <span>3. </span>
+          <Link href="/wordingInteractive" className="text-blue-600 underline">
+            Wording Interactive Elements
+          </Link>
+        </div>
       </div>
     </>
   );
 }
+
+Home.getLayout = function getLayout(page: ReactElement) {
+  return <>{page}</>;
+};

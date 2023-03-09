@@ -1,12 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-
-export default function () {
+export default function ColorIndependence() {
   return (
     <div className="m-2">
-    <Link href="/" className="text-blue-600 underline">
-    Return to best practices
-  </Link>
       <h1 className="text-center text-2xl mt-5 mb-5 bg-black text-white">
         Color Independence
       </h1>
@@ -27,16 +21,16 @@ export default function () {
           the grayscale test.
         </li>
         <li>
-          <span className="font-bold mr-1">For error message styling: </span> Indicate
-          errors by adding/changing something structural (e.g. add an icon,
-          indent/offset the field) as opposed to swapping a current color (e.g.
-          gray field border changes to red).
+          <span className="font-bold mr-1">For error message styling: </span>{" "}
+          Indicate errors by adding/changing something structural (e.g. add an
+          icon, indent/offset the field) as opposed to swapping a current color
+          (e.g. gray field border changes to red).
         </li>
         <li>
           <span className="font-bold mr-1">
-            For current menu items (and other “selected” states): 
+            For current menu items (and other “selected” states):
           </span>
-           Style the currently selected menu item with a color independent
+          Style the currently selected menu item with a color independent
           indicator (not just a color change), or use relative luminance.
         </li>
         <li className="font-bold mr-1">
@@ -46,7 +40,7 @@ export default function () {
         <li>
           <span className="font-bold mr-1">
             For progress trackers / progress indicators (and other similar UI
-            elements): 
+            elements):
           </span>
           Start by designing all three states for the steps in a progress
           tracker (past, current, and future) in one shade to avoid using color
@@ -55,7 +49,7 @@ export default function () {
         </li>
         <li>
           <span className="font-bold mr-1">
-            For bar charts (and other similar data visualizations): 
+            For bar charts (and other similar data visualizations):
           </span>
           Use pattern fills for bar charts and other similar data visualizations
         </li>
@@ -66,16 +60,16 @@ export default function () {
         </li>
         <li>
           <span className="font-bold mr-1">
-            For line graphs (and other similar data visualizations): 
+            For line graphs (and other similar data visualizations):
           </span>
           Use dashed/dotted line styles, and/or varying line widths, for line
           graphs and other similar data visualizations.
         </li>
         <li>
-          <span className="font-bold mr-1">For data visualizations: </span> Use other
-          non-color indicators, like shapes, labels, or icons, to make data
-          visualizations color independent (when pattern fills or line styles
-          are not feasible).
+          <span className="font-bold mr-1">For data visualizations: </span> Use
+          other non-color indicators, like shapes, labels, or icons, to make
+          data visualizations color independent (when pattern fills or line
+          styles are not feasible).
         </li>
         <li>
           <span className="font-bold mr-1">For any colored UI elements: </span>
@@ -83,21 +77,6 @@ export default function () {
           design that’s more usable for all.
         </li>
       </ul>
-      <span>Learn More about </span>
-      <a
-        className="text-blue-600 underline"
-        href="/pdfs/colorIndependence.pdf"
-        target="_blank"
-      >
-        Color Independence
-        <Image
-          className="inline-block"
-          src="/redirect.png"
-          width={12}
-          height={12}
-          alt="Color Independence"
-        />
-      </a>
     </div>
   );
 }

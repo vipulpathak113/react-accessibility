@@ -1,4 +1,4 @@
-const colorContrast = () => {
+export default function ColorContrast() {
   return (
     <>
       <h1>Color Contrast Requirement</h1>
@@ -89,10 +89,7 @@ const colorContrast = () => {
             </li>
           </ul>
         </li>
-        
       </ul>
     </>
   );
-};
-
-export default colorContrast;
+}
