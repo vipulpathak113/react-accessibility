@@ -1,12 +1,5 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import type { ReactElement } from "react";
-
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
   return (
     <>
@@ -14,7 +7,7 @@ export default function Home() {
         Top 10 Accessibility best practices for Design
       </h1>
 
-      <div className="grid grid-cols-[200px_200px] justify-center">
+      <div className="grid grid-cols-[300px_300px] justify-center">
         <div>
           <span>1. </span>
           <Link href="/colorContrast" className="text-blue-600 underline">
@@ -31,6 +24,12 @@ export default function Home() {
           <span>3. </span>
           <Link href="/wordingInteractive" className="text-blue-600 underline">
             Wording Interactive Elements
+          </Link>
+        </div>
+        <div>
+          <span>4. </span>
+          <Link href="/stylingInteractive1" className="text-blue-600 underline">
+            Styling Interactive Elements (Part1: Buttons and Like)
           </Link>
         </div>
       </div>
