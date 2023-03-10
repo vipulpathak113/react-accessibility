@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <h1 className="text-2xl text-center m-10">
-        Top 10 Accessibility best practices for Design
+        Top 10 Accessibility best practices for Designers
       </h1>
 
       <div className="grid grid-cols-[300px_300px] justify-center">
@@ -30,6 +30,12 @@ export default function Home() {
           <span>4. </span>
           <Link href="/stylingInteractive1" className="text-blue-600 underline">
             Styling Interactive Elements (Part1: Buttons and Like)
+          </Link>
+        </div>
+        <div>
+          <span>5. </span>
+          <Link href="/stylingInteractive2" className="text-blue-600 underline">
+            Styling Interactive Elements (Part2: Links and Like)
           </Link>
         </div>
       </div>
