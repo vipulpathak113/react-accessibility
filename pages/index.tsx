@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <h1 className="text-2xl text-center m-10">
-        Top 10 Accessibility best practices for Designers
+        Top 10 Accessibility Best Practices For Designers
       </h1>
 
       <div className="grid grid-cols-[400px_400px] justify-center">
