@@ -42,7 +42,7 @@ export default function StylingInteracting2() {
             </li>
           </ul>
         </li>
-
+        <hr></hr>
         <li>
           <span className="font-bold mr-1">
             Don’t want to use underlining for your links? 3 alternatives to
@@ -69,6 +69,7 @@ export default function StylingInteracting2() {
             </li>
           </ul>
         </li>
+        <hr></hr>
         <li>
           <span className="font-bold mr-1">
             Pick your link styling and stick to it:
@@ -76,7 +77,7 @@ export default function StylingInteracting2() {
           Whichever appearance you choose for links, apply that same treatment
           consistently throughout the digital product.
         </li>
-
+        <hr></hr>
         <li>
           <span className="font-bold mr-1">
             Reserve three things for links only, whether you choose to use them
@@ -90,10 +91,12 @@ export default function StylingInteracting2() {
           Any non-clickable elements that use one of these will look like a
           link, and that would be a misuse of a link signifier
         </li>
+        <hr></hr>
         <li className="font-bold mr-1">
           Strategy #1: Reserve a chosen color for all clickable/tappable
           elements, and avoid using that color for any non-clickable elements.
         </li>
+        <hr></hr>
       </ul>
     </div>
   );

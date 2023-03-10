@@ -23,6 +23,7 @@ export default function StylingInteracting1() {
           Rectangles are the safest choice, but other shapes can work too —
           particularly when coupled with strong signifiers of clickability.
         </li>
+        <hr></hr>
         <li>
           <span className="font-bold mr-1">The Border Radius Technique: </span>
           <span className="text-green-700 font-bold mr-1">
@@ -32,6 +33,7 @@ export default function StylingInteracting1() {
           being more playful — choose a “personality” that matches the vibe of
           the brand/digital product.
         </li>
+        <hr></hr>
         <li>
           <span className="font-bold mr-1">
             The Fill (and Color) Technique:
@@ -51,6 +53,7 @@ export default function StylingInteracting1() {
             <li>Tertiary actions are borderless buttons.</li>
           </ul>
         </li>
+        <hr></hr>
         <li>
           <span className="font-bold mr-1">
             The Shadow (and Elevation) Technique:
@@ -63,6 +66,7 @@ export default function StylingInteracting1() {
           panel, accordion bar, or anything that needs to show that it’s
           elevated from the page background or stacked over something.
         </li>
+        <hr></hr>
         <li>
           <span className="font-bold mr-1">The Competition Technique: </span>
           <span className="text-green-700 font-bold mr-1">
@@ -84,6 +88,7 @@ export default function StylingInteracting1() {
             </li>
           </ul>
         </li>
+        <hr></hr>
         <li>
           <span className="font-bold mr-1">The Proximity Technique: </span>
           When UI elements are in too close of proximity they can suffocate each
@@ -122,6 +127,7 @@ export default function StylingInteracting1() {
             </li>
           </ul>
         </li>
+        <hr></hr>
         <li>
           <span className="font-bold mr-1">
             Label Capitalization Technique:
@@ -134,6 +140,7 @@ export default function StylingInteracting1() {
           conversational, and the easiest to read, but when in doubt test it out
           with users (real or representative).
         </li>
+        <hr></hr>
         <li>
           <span className="font-bold mr-1">
             Reserve Button Signifiers for Buttons Only:{" "}
@@ -148,6 +155,7 @@ export default function StylingInteracting1() {
           shapes) for non-clickable elements even if you’re not using them in
           your designs.
         </li>
+        <hr></hr>
         <li>
           <span className="font-bold mr-1">
             Consistency, Similarity, and Distinctness:{" "}
@@ -159,6 +167,7 @@ export default function StylingInteracting1() {
             then do so.
           </span>
         </li>
+        <hr></hr>
       </ul>
     </div>
   );

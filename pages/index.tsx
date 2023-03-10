@@ -7,7 +7,7 @@ export default function Home() {
         Top 10 Accessibility best practices for Designers
       </h1>
 
-      <div className="grid grid-cols-[300px_300px] justify-center">
+      <div className="grid grid-cols-[400px_400px] justify-center">
         <div>
           <span>1. </span>
           <Link href="/colorContrast" className="text-blue-600 underline">

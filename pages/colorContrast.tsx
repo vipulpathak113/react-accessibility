@@ -1,15 +1,19 @@
 export default function ColorContrast() {
   return (
-    <>
-      <h1>Color Contrast Requirement</h1>
-      <h3>
-        <summary>
-          Ensure there is adequate contrast between the color of every single
-          information-bearing element and its background.
-        </summary>
-      </h3>
-      Here are some best practices:
-      <ul>
+    <div className="m-2">
+      <h1 className="text-center text-2xl mt-5 mb-5 bg-black text-white">
+        Color Contrast
+      </h1>
+
+      <div>
+        Ensure there is adequate contrast between the color of every single
+        information-bearing element and its background.
+      </div>
+
+      <div className="text-base font-semibold m-2">
+        There are various best practices:
+      </div>
+      <ul className="list-decimal list-inside">
         <li>
           Determine which UI elements need which levels of color contrast by
           categorizing them into two groups: (1) information-bearing elements,
@@ -18,7 +22,7 @@ export default function ColorContrast() {
         <hr></hr>
         <li>
           Exceed (or meet) the minimum color contrast requirements.
-          <ul>
+          <ul className="list-disc list-inside ml-5">
             <li>
               <strong>For Decorative and Disabled Elements:</strong> there is no
               color contrast requirement.
@@ -27,7 +31,7 @@ export default function ColorContrast() {
               <strong>For Information-Bearing Elements:</strong> at least 4.5:1.
               An exception is made for some elements, and for these the minimum
               drops to 3:1. They include:
-              <ul>
+              <ul className="list-disc list-inside ml-5">
                 <li>
                   <strong> Large Text (or images of text):</strong> 14pt bold+
                   or 18pt reg+
@@ -53,18 +57,16 @@ export default function ColorContrast() {
         </li>
         <hr></hr>
         <li>
-          <div>
-            Avoid problematic color combinations, such as:
-            <ul>
-              <li>Red & Green (the biggest one to avoid)</li>
-              <li>Green & Brown</li>
-              <li>Green & Blue</li>
-              <li>Green & Gray</li>
-              <li>Green & Black</li>
-              <li>Blue & Gray</li>
-              <li>Blue & Purple</li>
-            </ul>
-          </div>
+          Avoid problematic color combinations, such as:
+          <ul className="list-disc list-inside ml-5">
+            <li>Red & Green (the biggest one to avoid)</li>
+            <li>Green & Brown</li>
+            <li>Green & Blue</li>
+            <li>Green & Gray</li>
+            <li>Green & Black</li>
+            <li>Blue & Gray</li>
+            <li>Blue & Purple</li>
+          </ul>
           <div>
             Or, if your design truly calls for using problematic colors next to
             each other, really make sure there is a high contrast ratio between
@@ -77,7 +79,7 @@ export default function ColorContrast() {
         <li>
           Check the contrast of your colors as you are designing, not once
           you’re all done.
-          <ul>
+          <ul className="list-disc list-inside ml-5">
             <li>
               Manually checking the colors as you’re picking them out will train
               your eye to recognize which colors pass and which don’t, just by
@@ -89,7 +91,8 @@ export default function ColorContrast() {
             </li>
           </ul>
         </li>
+        <hr></hr>
       </ul>
-    </>
+    </div>
   );
 }
