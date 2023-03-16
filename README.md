@@ -48,5 +48,10 @@
       - Decorative images can have empty alt text. 
 
 
+## Steps to setup react app for accessibility:
+
+- Install **eslint-plugin-jsx-a11y** plugin as a dev dependency. This plugin does **a static evaluation of the JSX to spot accessibility issues in React apps**. Because it only catches errors in static code, use it in combination with @axe-core/react to test the accessibility of the rendered DOM.
+
+
           
        

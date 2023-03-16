@@ -16,7 +16,7 @@ export default function Home() {
         </div>
         <div>
           <span>2. </span>
-          <Link href="/colorIndependence" className="text-blue-600 underline font-[fantasy] font-[fantasy]">
+          <Link href="/colorIndependence" className="text-blue-600 underline font-[fantasy]">
             Color Independence
           </Link>
         </div>
