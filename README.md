@@ -1,38 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Web Accessibility
 
-## Getting Started
+- **What is WCAG 2.1 ?**
 
-First, run the development server:
+    WCAG 2.1 stands for Web Content Accessibility Guidelines 2.1. These guidelines are a set of standards developed by the World Wide Web Consortium (W3C) that help ensure that web content is accessible to everyone, including people with disabilities.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+ - **What are the principles of WCAG ?**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    - **Perceivable:** This principle focuses on making sure that web content can be perceived by all users, including those with visual, auditory, and other sensory disabilities. It includes guidelines for providing text alternatives for non-text content, using color contrast to improve legibility, and ensuring that content can be presented in different ways (such as larger fonts or high-contrast modes).
+    - **Operable:** This principle focuses on making sure that web content is operable by all users, including those with physical or motor disabilities. It includes guidelines for making content keyboard accessible, providing enough time for users to interact with content, and avoiding content that causes seizures or physical reactions.
+    - **Understandable:** This principle focuses on making sure that web content is understandable by all users, including those with cognitive or learning disabilities. It includes guidelines for using clear and simple language, organizing content in a logical way, and avoiding content that is confusing or misleading.
+    - **Robust:** This principle focuses on making sure that web content is compatible with different technologies and can be accessed using different devices and software. It includes guidelines for using standard coding practices, providing fallbacks for unsupported features, and testing for accessibility.
+<br><br>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- **What are the different level of conformance related to WCAG?** 
+    - **Level A:** This is the lowest level of conformance and represents the minimum level of accessibility that a website should meet. Level A conformance means that the website meets all the mandatory guidelines in WCAG 2.1 at Level A. This includes guidelines related to providing alternative text for images, ensuring that text can be resized without losing content or functionality, and ensuring that all content is accessible via a keyboard.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+    - **Level AA:** This is a higher level of conformance that includes all Level A guidelines as well as some additional guidelines. Level AA conformance means that the website meets all the mandatory guidelines in WCAG 2.1 at Level A and Level AA. This includes guidelines related to providing captions for videos, ensuring that color is not the only means of conveying information, and providing a mechanism for users to skip repetitive content.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+    - **Level AAA:** This is the highest level of conformance and includes all Level A and Level AA guidelines as well as some additional guidelines. Level AAA conformance means that the website meets all the mandatory guidelines in WCAG 2.1 at Level A, Level AA, and Level AAA. This includes guidelines related to providing sign language interpretation for videos, ensuring that content can be navigated in a variety of ways, and providing additional ways for users to access content, such as through audio descriptions.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+-   **Most Important areas for accessibilty :**
 
-## Learn More
+    - Images
+    - Text
+    - Links
+    - Lists
+    - Media
+    - Visual Design
+    <br><br>
 
-To learn more about Next.js, take a look at the following resources:
+    **Images**: Images are single-sense content which only can be seen, Audio can only be heard whereas text can be seen and also heard via screen reader and also felt using Braille display.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    **So using alt text in images we can also make our website more accessible to the users.**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    We can make our Alt text good and useful if we follow certain guidelines :
+    - Concise and descriptive
+    - Conveys the meaning of the image
+    - Describe the subject of the image
+    - Describe action/or emotion of the image
 
-## Deploy on Vercel
+        <br>
+     Some best practices include:
+      - Avoid add "Image of" > Will be repetitive as screen reader will append image itself.
+      - Logos can include the word "logo"
+      - Avoid images of text > As we have to explain whole image with text in alt.
+      - Be mindful of charts and graphs> As it can be complex to describe so mention like growth of 50% in alt text.
+      - Decorative images can have empty alt text. 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+          
+       
