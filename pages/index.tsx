@@ -3,11 +3,13 @@ import type { ReactElement } from "react";
 export default function Home() {
   return (
     <>
+    <header>
       <h1 className="text-center m-10 font-[cursive] text-3xl">
         Top 10 Accessibility Best Practices For Designers
       </h1>
+      </header>
 
-      <div className="grid grid-cols-[400px_400px] justify-center">
+      <main className="grid grid-cols-[400px_400px] justify-center">
         <div>
           <span>1. </span>
           <Link href="/colorContrast" className="text-blue-600 underline font-[fantasy]">
@@ -38,7 +40,7 @@ export default function Home() {
             Styling Interactive Elements (Part2: Links and Like)
           </Link>
         </div>
-      </div>
+      </main>
     </>
   );
 }

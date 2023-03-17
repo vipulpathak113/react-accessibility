@@ -14,15 +14,17 @@ interface footer {
 
 function BackLink() {
   return (
+    <nav>
     <Link href="/" className="text-blue-600 underline m-3">
       Return to best practices
     </Link>
+    </nav>
   );
 }
 
 function FooterLink({ page }: footer) {
   return (
-    <>
+    <footer>
       <span>Learn More about </span>
       <a
         className="text-blue-600 underline"
@@ -35,10 +37,10 @@ function FooterLink({ page }: footer) {
           src="/redirect.png"
           width={12}
           height={12}
-          alt={page ? page : ""}
+          alt={""}
         />
       </a>
-    </>
+    </footer>
   );
 }
 

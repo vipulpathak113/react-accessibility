@@ -27,6 +27,7 @@
     - Lists
     - Media
     - Visual Design
+    - Landmarks
     <br><br>
 
     **Images**: Images are single-sense content which only can be seen, Audio can only be heard whereas text can be seen and also heard via screen reader and also felt using Braille display.
@@ -50,7 +51,66 @@
 
 ## Steps to setup react app for accessibility:
 
-- Install **eslint-plugin-jsx-a11y** plugin as a dev dependency. This plugin does **a static evaluation of the JSX to spot accessibility issues in React apps**. Because it only catches errors in static code, use it in combination with @axe-core/react to test the accessibility of the rendered DOM.
+- Install **eslint-plugin-jsx-a11y** plugin as a dev dependency. This plugin does **a static evaluation of the JSX to spot accessibility issues in React apps**. Because it only catches errors in static code, use it in combination with **@axe-core/react** to test the accessibility of the rendered DOM.
+
+- Setup eslint configuration for the **eslint-plugin-jsx-a11y** in .eslintrc.json
+
+- Setup **axe-core/react** in the main file i.e _app.js > It will report error in the browser console related to accesibility for react elements i.e jsx per page.
+
+- We can also use browser extensions which can help in figuring out accessibility issues.
+    - WAVE 
+    - Color Blindly
+    - tota11y
+    <br><br>
+
+- We can find mostly issues in these areas:
+    - **Landmarks:** Landmarks help assistive technology (AT) users orient themselves to a page and help them navigate easily to various sections of a page. They also provide an easy way for users of assistive technology to skip over blocks of content that are repeated on multiple pages and notify them of programmatic structure of a page.
+
+      Ex: ```role="main" or <main> ``` 
+      Semantic HTML are preferred choice for it but it can be also done using aria-role.
+
+    - **Heading Levels:** Use headings to describe content and use them consistently and semantically. This will help all users to better find the content they are looking for. 
+        - Use one unique h1 per page that describes what that page is about. 
+        That h1 preferably starts just above the main content.
+        - Use headings to describe the content below. Do not use an HTML heading just to make the text appear bigger or stand out.
+        - Use heading levels like the index of a book: hierarchical.
+        - Do not choose a heading by its size, but by its level in the context of the content.
+        - Do not skip a heading level from the top down.
+
+    - **Form Labels:** Provide labels to identify all form controls, including text fields, checkboxes, radio buttons, and drop-down menus. In most cases, this is done by using the ```<label>``` element.  
+        - Use the label element to associate text with form elements explicitly. The for attribute of the label must exactly match the id of the form control. 
+
+        ```html  
+         <label for="firstname">First name:</label>
+         <input type="text" name="firstname" id="firstname">
+        ```
+       - Using aria-label
+       ```html 
+       <input type="text" name="search" aria-label="Search">
+        <button type="submit">Search</button>
+       ```
+      - Using aria-labelledby
+      ```html
+      <input type="text" name="search" aria-labelledby="searchbutton">
+        <button id="searchbutton" type="submit">Search</button> 
+        ```
+      - Using the title attribute
+      ```html
+      <input title="Search" type="text" name="search">
+        <button type="submit">Search</button>  
+        ```
+    - Use **aria-labelled-by** to group elements so that they can be read together as a whole sentence by screen readers.
+        ```html
+        <div aria-labelled-by="no-movies add link">
+       <span id="no-movies"> No movies in your wish list </span> <Link id="add-link" to="/browse"> Add some!</Link>
+        </div> 
+        ``` 
+
+    - Use alt text for images
+    - Have sufficient Contrast ratio for foreground and background. It should be 4.5:1 for AA and 7:0 for AAA for normal text and 3:1 for larger text
+    - Use more than color to convey information for an element
+
+        
 
 
           

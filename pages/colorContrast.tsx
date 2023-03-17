@@ -1,10 +1,11 @@
 export default function ColorContrast() {
   return (
     <div className="m-2">
+      <header>
       <h1 className="text-center text-2xl mt-5 mb-5 bg-black text-white">
         Color Contrast
       </h1>
-
+      </header>
       <div>
         Ensure there is adequate contrast between the color of every single
         information-bearing element and its background.
@@ -18,8 +19,8 @@ export default function ColorContrast() {
           Determine which UI elements need which levels of color contrast by
           categorizing them into two groups: (1) information-bearing elements,
           and (2) decorative and disabled elements.
-        </li>
         <hr></hr>
+        </li>
         <li>
           Exceed (or meet) the minimum color contrast requirements.
           <ul className="list-disc list-inside ml-5">
@@ -54,8 +55,8 @@ export default function ColorContrast() {
               </ul>
             </li>
           </ul>
-        </li>
         <hr></hr>
+        </li>
         <li>
           Avoid problematic color combinations, such as:
           <ul className="list-disc list-inside ml-5">
@@ -74,8 +75,8 @@ export default function ColorContrast() {
             more pronounced, or play with the saturation, or slide the hues a
             little one way or another.
           </div>
-        </li>
         <hr></hr>
+        </li>
         <li>
           Check the contrast of your colors as you are designing, not once
           you’re all done.
@@ -90,8 +91,8 @@ export default function ColorContrast() {
               out, you’re less likely to miss checking a color.
             </li>
           </ul>
-        </li>
         <hr></hr>
+        </li>
       </ul>
     </div>
   );
