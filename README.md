@@ -152,7 +152,24 @@
     ```
     In this example it will read "This text will now be read", "first label" then "Further information". Yet again you need to focus the button (not mouse over) to see this behaviour.
 
+- *Web Access Tools for the Visually Impaired*:
+
+    - **Screen Readers**: A screen reader is a web accessibility software tool which reads text on the screen with a speech synthesizer or (less frequently) translates it into Braille.
+        - COBRA
+        - Hal
+        - JAWS (Job Access with Speech)
+    - **Braille Keyboards:** A Braille keyboard is a piece of assistive technology that is very different from a standard QWERTY keyboard. There are 8 keys which are used to compose the Braille letters
+    - **Screen Magnifiers**: Screen magnifying technology refers to web accessibility software that helps people who are visually impaired but not blind to view information on a computer screen.
+- *Web Access Tools for people with Physical Disabilities:*
+    - **Sip and Puff Systems**: A person in a wheelchair controlling movement by breathing into a straw is called a puff-and-sip system. 
+    The technology has been adapted to allow people with physical disabilities, such as paralyzed people, to also access the computer.It recognizes sips or puffs and translates these into commands such as mouse clicks or keyboard characters.
+    - **Hands-Free Mouse Tracking**: One option is FaceMouse, which turns a standard web camera into a mouse operator. It does this by recognizing face or head movements and translating them into commands, like clicks.
+    - **Voice Controls**: Voice control accessibility software includes programs that convert Speech to Text, and also allow you to command the computer with your voice. One of the most well-known and feature-rich **web accessibility software programs is Dragon**.    
+    
+
 - [Best practices for aria attributes](https://www.w3.org/WAI/ARIA/apg/)
+
+- Interview questions for [accessibility](https://uilicious.com/blog/accessibility-testing-interview-questions/)
 
         
 
