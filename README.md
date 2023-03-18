@@ -106,9 +106,53 @@
         </div> 
         ``` 
 
-    - Use alt text for images
-    - Have sufficient Contrast ratio for foreground and background. It should be 4.5:1 for AA and 7:0 for AAA for normal text and 3:1 for larger text
-    - Use more than color to convey information for an element
+- Use alt text for images
+- Have sufficient Contrast ratio for foreground and background. It should be 4.5:1 for AA and 7:0 for AAA for normal text and 3:1 for larger text
+- Use more than color to convey information for an element
+- ```role="alert" ``` this allows you to tell the screen reader to vocalize the element automatically when it is created.
+
+    ```html
+     <span role="alert"> This is an alert message. </span>
+    ```
+
+- ```aria-live``` the aria-live attribute is used to indicate to the screen reader that any modification made to its content will result in vocalization by the screen reader.
+
+    ```html 
+    <span aria-live="polite">5 selected items</span> 
+    ```
+
+    Three values ​​are possible:
+
+    - **Off:** no vocalization
+    - **Polite:** the vocalization will take place when the screen reader has finished the current task
+    - **Assertive:** the screen reader interrupts the current task to inform the user
+    <br><br>
+
+    Additional attributes allow fine modification of the default behavior of aria-live:
+
+    - **aria-atomic:** true or false (default), used to indicate whether the whole of the live zone must be read (true) or only the modified part (false).
+    - **aria-relevant:** indicates which type of change triggers a vocalization, possible values: additions (default), removals, all.
+
+- Appropriately set focus on each page load of web application
+
+- **aria-labelledby:** aria-labelledby will overwrite any existing labelling including any semantically derived label.
+
+    ```html
+    <button aria-labelledby="lbl1 lbl2">This text will not be read</button>
+    <p id="lbl1">first label</p>
+    <p id="lbl2">Further information</p>
+    ```
+    In the following example if you tab to the button (using the mouse over will read the button text in some screen readers) it will read "first label" then "Further information" instead of "this text will not be read".
+
+- **aria-describedby :** aria-describedby on the other hand will read the linked information as additional information. It will read this after the button semantically derived information.
+    ```html
+    <button aria-describedby="lbl1 lbl2">This text will now be read</button>
+    <p id="lbl1">first label</p>
+    <p id="lbl2">Further information</p>
+    ```
+    In this example it will read "This text will now be read", "first label" then "Further information". Yet again you need to focus the button (not mouse over) to see this behaviour.
+
+- [Best practices for aria attributes](https://www.w3.org/WAI/ARIA/apg/)
 
         
 
